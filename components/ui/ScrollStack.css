@@ -1,0 +1,34 @@
+.scroll-stack-scroller {
+  position: relative;
+  width: 100%;
+  overflow-x: visible;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.scroll-stack-inner {
+  padding: 2vh 0 1rem;
+}
+
+.scroll-stack-card {
+  position: sticky;
+  top: 18%;
+  will-change: transform, filter;
+  transition: box-shadow 0.3s ease;
+  transform-origin: center top;
+}
+
+/* Reduced motion: disable sticky stacking and transforms */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-stack-card {
+    position: relative !important;
+    top: auto !important;
+    transform: none !important;
+    filter: none !important;
+    margin-bottom: 2rem;
+  }
+
+  .scroll-stack-inner {
+    padding: 4vh 0 4vh;
+  }
+}

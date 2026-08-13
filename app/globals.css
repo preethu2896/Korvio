@@ -1,26 +1,190 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Dark surfaces */
+  --bg-dark: #0a0a0c;
+  --bg-dark-surface: #121318;
+  --text-dark-primary: #f8fafc;
+  --text-dark-secondary: #94a3b8;
+  
+  /* Light surfaces (Editorial rhythm) */
+  --bg-light: #fcfbf9;
+  --bg-light-surface: #f3f2ee;
+  --text-light-primary: #0f172a;
+  --text-light-secondary: #475569;
+
+  /* Accents inspired by Korvio logo (Purple -> Blue) */
+  --korvio-purple: #7c3aed;
+  --korvio-violet: #8b5cf6;
+  --korvio-blue: #3b82f6;
+  --korvio-indigo: #4f46e5;
+  --accent-glow: rgba(139, 92, 246, 0.12);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-dark-primary);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Typographic Contrast utilities */
+.font-serif-italic {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-style: italic;
+}
+
+/* Editorial Typography utilities */
+.font-display {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.text-headline {
+  font-size: clamp(2.5rem, 5vw + 1rem, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 850;
+}
+
+.text-headline-editorial {
+  font-size: clamp(2.25rem, 4vw + 1rem, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  font-weight: 800;
+}
+
+/* Editorial Section Themes */
+.section-dark {
+  background-color: #0a0a0c;
+  color: #f8fafc;
+}
+
+.section-dark-surface {
+  background-color: #121318;
+  color: #f8fafc;
+}
+
+.section-light {
+  background-color: #fcfbf9;
+  color: #0f172a;
+}
+
+.section-light-surface {
+  background-color: #f3f2ee;
+  color: #0f172a;
+}
+
+/* Korvio Diagonal Split & Divider Geometry */
+.korvio-diagonal-divider {
+  position: relative;
+}
+
+.korvio-diagonal-divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #7c3aed 0%, #3b82f6 100%);
+  opacity: 0.8;
+}
+
+.korvio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.korvio-badge-dark {
+  background: rgba(139, 92, 246, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+.korvio-badge-light {
+  background: rgba(124, 58, 237, 0.08);
+  color: #6d28d9;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+/* Editorial Image Frame Containers */
+.editorial-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-frame-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(10, 10, 12, 0.85) 100%);
+  pointer-events: none;
+}
+
+/* Custom Editorial Hover States */
+.editorial-hover-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-hover-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Gradient Text Accents (Restrained) */
+.text-accent-gradient {
+  background: linear-gradient(135deg, #a855f7 0%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-accent-purple {
+  color: #8b5cf6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}
+
+/* Accessibility Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
