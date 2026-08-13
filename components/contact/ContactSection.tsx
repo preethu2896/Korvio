@@ -77,10 +77,9 @@ export function ContactSection() {
 
     try {
       const payload = {
-        access_key: siteConfig.web3FormsAccessKey || "",
+        access_key: siteConfig.web3FormsAccessKey,
         subject: `New Korvio Brand Inquiry — ${formData.brand.trim()}`,
         from_name: "Korvio Website",
-        to_email: siteConfig.contact.email,
         name: formData.name.trim(),
         email: formData.email.trim(),
         brand: formData.brand.trim(),
@@ -104,8 +103,7 @@ export function ContactSection() {
       if (response.ok && data.success) {
         setSubmissionStatus("success");
       } else {
-        // Production-safe error logging (never logs access key or sensitive credentials)
-        console.error("Web3Forms Submission Error:", {
+        console.error("Contact Form Submission Error:", {
           status: response.status,
           success: data?.success ?? false,
           message: data?.message || "Submission failed",

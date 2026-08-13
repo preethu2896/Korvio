@@ -58,7 +58,8 @@ export const siteConfig = {
    * Web3Forms API configuration for Brand Inquiry contact form.
    * Access key can be set via NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY in .env.local
    */
-  web3FormsAccessKey: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "",
+  web3FormsAccessKey:
+    process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "dbd23e29-0325-4391-9837-a7da5a4ac004",
   formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "https://api.web3forms.com/submit",
 } as const;
 
