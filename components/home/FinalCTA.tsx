@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
+import { trackEvent } from "@/lib/analytics";
 
 export function FinalCTA() {
   return (
@@ -63,6 +64,7 @@ export function FinalCTA() {
             <div className="space-y-2 pt-1">
               <Link
                 href="/contact"
+                onClick={() => trackEvent("work_with_korvio_clicked")}
                 className="inline-flex items-center gap-2.5 text-sm sm:text-base font-bold px-7 py-3.5 rounded-full bg-[#F7F6F2] text-[#0D0D0D] hover:bg-white transition-colors group"
               >
                 <span>Work With Korvio</span>

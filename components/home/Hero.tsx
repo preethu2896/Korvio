@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
+import { trackEvent } from "@/lib/analytics";
 
 export function Hero() {
   return (
@@ -82,6 +83,7 @@ export function Hero() {
             {/* PRIMARY CTA */}
             <Link
               href="/brands"
+              onClick={() => trackEvent("work_with_korvio_clicked")}
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-950 font-semibold text-xs sm:text-sm px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:scale-[1.02] active:scale-95 group text-left"
             >
               <span>Work With Korvio</span>

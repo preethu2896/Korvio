@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { siteConfig, socialLinks, mailtoUrl, phoneUrl, whatsappUrl } from "@/config/site";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
+import { trackEvent } from "@/lib/analytics";
 
 const exploreLinks = [
   { label: "Home", href: "/" },
@@ -95,6 +96,7 @@ export function Footer() {
             <div className="pt-2 space-y-2">
               <Link
                 href="/contact"
+                onClick={() => trackEvent("work_with_korvio_clicked")}
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-[#F7F6F2] hover:text-purple-400 transition-colors group"
               >
                 <span>Work With Korvio</span>
@@ -121,6 +123,7 @@ export function Footer() {
             <div className="space-y-2 text-xs sm:text-sm">
               <a
                 href={mailtoUrl}
+                onClick={() => trackEvent("email_clicked")}
                 className="block font-medium text-[#F7F6F2]/75 hover:text-[#F7F6F2] transition-colors"
               >
                 {siteConfig.contact.email}
@@ -135,6 +138,7 @@ export function Footer() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent("whatsapp_clicked")}
                 className="inline-flex items-center gap-1 font-medium text-[#F7F6F2]/75 hover:text-purple-400 transition-colors"
               >
                 <span>WhatsApp</span>
@@ -148,12 +152,22 @@ export function Footer() {
                 .filter((s) => ["Instagram", "LinkedIn", "X"].includes(s.label))
                 .map((item) => {
                   const Icon = item.icon;
+                  const getSocialEventName = (label: string) => {
+                    if (label === "Instagram") return "instagram_clicked";
+                    if (label === "LinkedIn") return "linkedin_clicked";
+                    if (label === "X") return "x_clicked";
+                    return null;
+                  };
                   return (
                     <a
                       key={item.label}
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => {
+                        const evt = getSocialEventName(item.label);
+                        if (evt) trackEvent(evt);
+                      }}
                       className="inline-flex items-center gap-1.5 text-xs font-medium text-[#F7F6F2]/60 hover:text-[#F7F6F2] transition-colors"
                       aria-label={`Korvio on ${item.label}`}
                     >

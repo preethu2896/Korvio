@@ -8,6 +8,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { siteConfig } from "@/config/site";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
+import { trackEvent } from "@/lib/analytics";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -128,6 +129,7 @@ export function Navbar() {
 
           <Link
             href="/contact"
+            onClick={() => trackEvent("work_with_korvio_clicked")}
             className="inline-flex items-center gap-2 bg-[#222222] hover:bg-black text-white text-[11px] sm:text-[12px] font-medium pl-3.5 pr-1 py-1 rounded-full transition-all duration-300 group shadow-sm active:scale-95"
           >
             <span>Work With Korvio</span>
@@ -182,7 +184,10 @@ export function Navbar() {
 
               <Link
                 href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  trackEvent("work_with_korvio_clicked");
+                }}
                 className="flex items-center justify-between w-full bg-[#222222] hover:bg-black text-white text-xs font-medium px-4 py-2.5 rounded-full transition-colors"
               >
                 <span>Work With Korvio</span>

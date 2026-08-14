@@ -3,8 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
+import { trackEvent } from "@/lib/analytics";
 
 /* ─── Brand process steps ──────────────────────────────── */
 const brandSteps = [
@@ -88,6 +89,7 @@ export function Credibility() {
             <div className="space-y-3 pt-2">
               <Link
                 href="/contact"
+                onClick={() => trackEvent("work_with_korvio_clicked")}
                 className="inline-flex items-center gap-2.5 text-sm sm:text-base font-bold px-7 py-3.5 rounded-full bg-[#111111] text-[#F7F6F2] hover:bg-[#222222] transition-colors group"
               >
                 <span>Work With Korvio</span>

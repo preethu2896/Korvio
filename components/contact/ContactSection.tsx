@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
 import { ArrowUpRight, CheckCircle2, Mail, MessageCircle, AlertCircle, Loader2 } from "lucide-react";
 import { motion } from "motion/react";
+import { trackEvent } from "@/lib/analytics";
 
 const inquiryOptions = [
   "Creator Campaign",
@@ -102,6 +103,7 @@ export function ContactSection() {
 
       if (response.ok && data.success) {
         setSubmissionStatus("success");
+        trackEvent("brand_inquiry_submitted");
       } else {
         console.error("Contact Form Submission Error:", {
           status: response.status,
@@ -173,6 +175,7 @@ export function ContactSection() {
               <div className="space-y-3 text-xs sm:text-sm">
                 <a
                   href={mailtoUrl}
+                  onClick={() => trackEvent("email_clicked")}
                   className="flex items-center gap-3 text-[#F7F6F2]/80 hover:text-[#F7F6F2] transition-colors group"
                 >
                   <Mail className="w-4 h-4 text-purple-400 shrink-0" />
@@ -183,6 +186,7 @@ export function ContactSection() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackEvent("whatsapp_clicked")}
                   className="flex items-center gap-3 text-[#F7F6F2]/80 hover:text-purple-400 transition-colors group"
                 >
                   <MessageCircle className="w-4 h-4 text-purple-400 shrink-0" />
@@ -197,12 +201,22 @@ export function ContactSection() {
                   .filter((s) => ["Instagram", "LinkedIn", "X"].includes(s.label))
                   .map((item) => {
                     const Icon = item.icon;
+                    const getSocialEventName = (label: string) => {
+                      if (label === "Instagram") return "instagram_clicked";
+                      if (label === "LinkedIn") return "linkedin_clicked";
+                      if (label === "X") return "x_clicked";
+                      return null;
+                    };
                     return (
                       <a
                         key={item.label}
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => {
+                          const evt = getSocialEventName(item.label);
+                          if (evt) trackEvent(evt);
+                        }}
                         className="inline-flex items-center gap-1.5 text-xs font-medium text-[#F7F6F2]/60 hover:text-[#F7F6F2] transition-colors"
                         aria-label={`Korvio on ${item.label}`}
                       >

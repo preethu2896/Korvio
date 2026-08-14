@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
 import { Building2, ArrowRight, CheckCircle2, Target } from "lucide-react";
 import { motion } from "motion/react";
+import { trackEvent } from "@/lib/analytics";
 
 export function BrandHero() {
   return (
@@ -51,7 +52,7 @@ export function BrandHero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2"
             >
-              <Button href="/contact" size="lg" variant="gradient" icon={<ArrowRight className="w-4 h-4" />}>
+              <Button href="/contact" size="lg" variant="gradient" onClick={() => trackEvent("work_with_korvio_clicked")} icon={<ArrowRight className="w-4 h-4" />}>
                 Work With Korvio
               </Button>
               <CreatorApplyButton label="Are you a Creator?" size="lg" variant="outline" />

@@ -5,6 +5,10 @@ import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
+import Script from "next/script";
+import { GA_MEASUREMENT_ID } from "@/lib/analytics";
+import { AnalyticsNavigationTracker } from "@/components/analytics/AnalyticsNavigationTracker";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -117,6 +121,22 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#0a0a0c] text-slate-100 selection:bg-purple-500/30 selection:text-purple-200">
+        {/* Google Analytics 4 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+        <AnalyticsNavigationTracker />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
