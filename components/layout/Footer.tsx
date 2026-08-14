@@ -16,8 +16,8 @@ const exploreLinks = [
 ];
 
 const workLinks = [
-  { label: "For Brands", href: "/contact" },
-  { label: "For Creators", href: "/#creators" },
+  { label: "For Brands", href: "/brands" },
+  { label: "For Creators", href: "/creators" },
 ];
 
 export function Footer() {

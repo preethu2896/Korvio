@@ -7,8 +7,35 @@ import { CreatorFAQ } from "@/components/creators/CreatorFAQ";
 import { CreatorCTA } from "@/components/creators/CreatorCTA";
 
 export const metadata: Metadata = {
-  title: "Join Korvio — Creator Brand Collaborations",
-  description: "Connect with authentic brands that fit your content, audience, and creative vision. Join the Korvio creator network today.",
+  title: "Creator Partnerships & Brand Collaborations | Korvio",
+  description:
+    "Join Korvio's creator network and discover relevant brand collaboration opportunities that fit your content, audience and creative style.",
+  alternates: {
+    canonical: "https://korvio.in/creators",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://korvio.in/creators",
+    siteName: "Korvio",
+    title: "Creator Partnerships & Brand Collaborations | Korvio",
+    description:
+      "Join Korvio's creator network and discover relevant brand collaboration opportunities that fit your content, audience and creative style.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Creator Partnerships & Brand Collaborations | Korvio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Creator Partnerships & Brand Collaborations | Korvio",
+    description:
+      "Join Korvio's creator network and discover relevant brand collaboration opportunities that fit your content, audience and creative style.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function CreatorsPage() {

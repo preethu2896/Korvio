@@ -23,28 +23,45 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://korvio.in"),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
-    template: `%s | ${siteConfig.name}`,
+    default: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    template: "%s | Korvio",
   },
-  description: siteConfig.description,
-  keywords: [
-    "Influencer Marketing Agency",
-    "Creator Partnerships",
-    "Brand Collaborations",
-    "Creator Discovery",
-    "Campaign Strategy",
-    "India Creators",
-    "Korvio",
-  ],
+  description:
+    "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+  applicationName: "Korvio",
   authors: [{ name: "Korvio" }],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://korvio.in/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteConfig.url,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
-    siteName: siteConfig.name,
+    url: "https://korvio.in/",
+    siteName: "Korvio",
+    title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    description:
+      "Connecting brands with relevant creators for authentic partnerships and campaigns.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    description:
+      "Connecting brands with relevant creators for authentic partnerships and campaigns.",
+    images: ["/og-image.jpg"],
   },
   icons: {
     icon: "/icon.png",
@@ -57,18 +74,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const jsonLd = {
+  const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: siteConfig.name,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}/brand/logo.png`,
-    description: siteConfig.description,
-    sameAs: [siteConfig.contact.instagram, siteConfig.contact.linkedin],
-    contactPoint: {
-      "@type": "ContactPoint",
-      email: siteConfig.contact.email,
-      contactType: "customer support",
+    "@id": "https://korvio.in/#organization",
+    name: "Korvio",
+    url: "https://korvio.in",
+    logo: "https://korvio.in/brand/logo.png",
+    email: "hello.korvio@gmail.com",
+    sameAs: [
+      "https://www.instagram.com/korvio.in/",
+      "https://www.linkedin.com/in/korvio-in-6b9890428/",
+      "https://x.com/KorvioIn",
+    ],
+  };
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://korvio.in/#website",
+    name: "Korvio",
+    url: "https://korvio.in/",
+    publisher: {
+      "@id": "https://korvio.in/#organization",
     },
   };
 
@@ -81,7 +109,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#0a0a0c] text-slate-100 selection:bg-purple-500/30 selection:text-purple-200">

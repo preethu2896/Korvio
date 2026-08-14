@@ -6,8 +6,35 @@ import { Process } from "@/components/home/Process";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Korvio for Brands — Connect With the Right Creators",
-  description: "Launch targeted creator marketing campaigns with verified creator fit, managed outreach, and performance analytics.",
+  title: "Influencer Marketing for Brands | Creator Campaigns | Korvio",
+  description:
+    "Korvio helps brands discover relevant creators, coordinate collaborations and build influencer campaigns around the audiences that matter.",
+  alternates: {
+    canonical: "https://korvio.in/brands",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://korvio.in/brands",
+    siteName: "Korvio",
+    title: "Influencer Marketing for Brands | Creator Campaigns | Korvio",
+    description:
+      "Korvio helps brands discover relevant creators, coordinate collaborations and build influencer campaigns around the audiences that matter.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Influencer Marketing for Brands | Creator Campaigns | Korvio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Influencer Marketing for Brands | Creator Campaigns | Korvio",
+    description:
+      "Korvio helps brands discover relevant creators, coordinate collaborations and build influencer campaigns around the audiences that matter.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function BrandsPage() {
