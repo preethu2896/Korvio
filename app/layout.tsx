@@ -83,7 +83,6 @@ export default function RootLayout({
     "@type": "Organization",
     "@id": "https://korvio.in/#organization",
     name: "Korvio",
-    legalName: "Korvio",
     url: "https://korvio.in/",
     logo: "https://korvio.in/brand/logo.png",
     description:
