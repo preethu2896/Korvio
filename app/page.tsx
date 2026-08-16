@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://korvio.in/",
-    siteName: "Korvio",
+    siteName: "Korvio — Influencer Marketing Agency",
     title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Connecting brands with relevant creators for authentic partnerships and campaigns.",
+      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
     images: [
       {
         url: "/og-image.jpg",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Connecting brands with relevant creators for authentic partnerships and campaigns.",
+      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
     images: ["/og-image.jpg"],
   },
 };

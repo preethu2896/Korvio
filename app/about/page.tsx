@@ -4,33 +4,33 @@ import { WhyKorvio } from "@/components/home/WhyKorvio";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "About Korvio | Connecting Brands & Creators",
+  title: "About Korvio — Creator & Brand Partnerships",
   description:
-    "Learn what Korvio stands for and why we're building a more relevant connection between brands, creators and their audiences.",
+    "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
   alternates: {
-    canonical: "https://korvio.in/about",
+    canonical: "https://korvio.in/about/",
   },
   openGraph: {
     type: "website",
-    url: "https://korvio.in/about",
-    siteName: "Korvio",
-    title: "About Korvio | Connecting Brands & Creators",
+    url: "https://korvio.in/about/",
+    siteName: "Korvio — Influencer Marketing Agency",
+    title: "About Korvio — Creator & Brand Partnerships",
     description:
-      "Learn what Korvio stands for and why we're building a more relevant connection between brands, creators and their audiences.",
+      "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "About Korvio | Connecting Brands & Creators",
+        alt: "About Korvio — Creator & Brand Partnerships",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Korvio | Connecting Brands & Creators",
+    title: "About Korvio — Creator & Brand Partnerships",
     description:
-      "Learn what Korvio stands for and why we're building a more relevant connection between brands, creators and their audiences.",
+      "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
     images: ["/og-image.jpg"],
   },
 };

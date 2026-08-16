@@ -10,15 +10,15 @@ import { trackEvent } from "@/lib/analytics";
 
 const exploreLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "About", href: "/about/" },
   { label: "What We Do", href: "/#what-we-do" },
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Why Korvio", href: "/#why-korvio" },
 ];
 
 const workLinks = [
-  { label: "For Brands", href: "/brands" },
-  { label: "For Creators", href: "/creators" },
+  { label: "For Brands", href: "/brands/" },
+  { label: "For Creators", href: "/creators/" },
 ];
 
 export function Footer() {
@@ -52,7 +52,7 @@ export function Footer() {
             </p>
 
             <p className="text-xs sm:text-sm text-[#F7F6F2]/50 font-normal leading-relaxed max-w-[420px]">
-              Connecting brands with creators through authentic partnerships built around relevance, creative freedom and genuine audience fit.
+              Influencer marketing agency connecting brands with creators across India through authentic creator partnerships and campaign collaborations built around relevance, creative freedom and genuine audience fit.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export function Footer() {
 
             <div className="pt-2 space-y-2">
               <Link
-                href="/contact"
+                href="/contact/"
                 onClick={() => trackEvent("work_with_korvio_clicked")}
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-[#F7F6F2] hover:text-purple-400 transition-colors group"
               >

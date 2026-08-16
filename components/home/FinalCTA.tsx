@@ -63,7 +63,7 @@ export function FinalCTA() {
 
             <div className="space-y-2 pt-1">
               <Link
-                href="/contact"
+                href="/contact/"
                 onClick={() => trackEvent("work_with_korvio_clicked")}
                 className="inline-flex items-center gap-2.5 text-sm sm:text-base font-bold px-7 py-3.5 rounded-full bg-[#F7F6F2] text-[#0D0D0D] hover:bg-white transition-colors group"
               >
@@ -97,13 +97,21 @@ export function FinalCTA() {
               creative style.
             </p>
 
-            <div className="space-y-2 pt-1">
-              <CreatorApplyButton
-                label="Join Korvio"
-                variant="outline"
-                size="lg"
-                showIcon={true}
-              />
+            <div className="space-y-3 pt-1">
+              <div className="flex flex-wrap items-center gap-3">
+                <CreatorApplyButton
+                  label="Join Korvio"
+                  variant="outline"
+                  size="lg"
+                  showIcon={true}
+                />
+                <Link
+                  href="/creators/"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  <span>For Creators →</span>
+                </Link>
+              </div>
               <p className="text-xs text-[#F7F6F2]/40 font-normal">
                 Free to join.
               </p>

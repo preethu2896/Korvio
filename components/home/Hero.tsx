@@ -15,7 +15,7 @@ export function Hero() {
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src="/hero-image1.png"
-          alt="Indian content creator creating social media content"
+          alt="Korvio creator executing an influencer marketing campaign"
           fill
           priority
           sizes="100vw"
@@ -39,7 +39,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-purple-300 mb-3 sm:mb-4 text-left ml-0"
           >
-            CREATOR MARKETING
+            INFLUENCER MARKETING AGENCY • INDIA
           </motion.div>
 
           {/* MAIN HEADLINE (MODERATELY LARGER SIZING, DESKTOP NO-WRAP LINE 1) */}
@@ -70,7 +70,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-base sm:text-lg lg:text-[18px] text-slate-200 font-normal leading-relaxed max-w-[480px] mb-7 sm:mb-8 text-left ml-0"
           >
-            Connecting brands with the creators people actually want to watch.
+            Connecting brands with relevant creators for authentic influencer marketing and creator partnerships across India.
           </motion.p>
 
           {/* CTAs - FULLY LEFT ALIGNED */}
@@ -82,7 +82,7 @@ export function Hero() {
           >
             {/* PRIMARY CTA */}
             <Link
-              href="/brands"
+              href="/brands/"
               onClick={() => trackEvent("work_with_korvio_clicked")}
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-950 font-semibold text-xs sm:text-sm px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:scale-[1.02] active:scale-95 group text-left"
             >

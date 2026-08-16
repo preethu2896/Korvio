@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "motion/react";
 
 export function BrandCreatorStatement() {
@@ -41,7 +42,7 @@ export function BrandCreatorStatement() {
           >
             {/* PARAGRAPH 1 */}
             <p>
-              Korvio is an influencer marketing agency connecting brands with creators through partnerships built around relevance, creativity and genuine audience connection.
+              Korvio is an influencer marketing agency connecting brands with creators through partnerships built around relevance, creativity and genuine audience connection across India.
             </p>
 
             {/* PARAGRAPH 2 */}
@@ -49,10 +50,21 @@ export function BrandCreatorStatement() {
               We believe the right creator isn&apos;t simply the one with the biggest following. It&apos;s the one whose voice, content and audience genuinely fit the brand.
             </p>
 
-            {/* CLOSING STATEMENT */}
-            <p className="text-[#111111] font-semibold text-lg lg:text-[19px] pt-2">
-              That&apos;s what we&apos;re building.
-            </p>
+            {/* CLOSING STATEMENT & INTERNAL LINK */}
+            <div className="pt-2 space-y-3">
+              <p className="text-[#111111] font-semibold text-lg lg:text-[19px]">
+                That&apos;s what we&apos;re building.
+              </p>
+              <div>
+                <Link
+                  href="/about/"
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#111111] hover:text-[#5B3FD0] transition-colors group"
+                >
+                  <span>About Korvio</span>
+                  <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">→</span>
+                </Link>
+              </div>
+            </div>
           </motion.div>
 
         </div>

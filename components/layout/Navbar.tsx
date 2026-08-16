@@ -128,7 +128,7 @@ export function Navbar() {
           />
 
           <Link
-            href="/contact"
+            href="/contact/"
             onClick={() => trackEvent("work_with_korvio_clicked")}
             className="inline-flex items-center gap-2 bg-[#222222] hover:bg-black text-white text-[11px] sm:text-[12px] font-medium pl-3.5 pr-1 py-1 rounded-full transition-all duration-300 group shadow-sm active:scale-95"
           >
@@ -183,7 +183,7 @@ export function Navbar() {
               />
 
               <Link
-                href="/contact"
+                href="/contact/"
                 onClick={() => {
                   setMobileMenuOpen(false);
                   trackEvent("work_with_korvio_clicked");

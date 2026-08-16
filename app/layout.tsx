@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://korvio.in"),
   title: {
     default: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
-    template: "%s | Korvio",
+    template: "%s",
   },
   description:
     "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://korvio.in/",
-    siteName: "Korvio",
+    siteName: "Korvio — Influencer Marketing Agency",
     title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Connecting brands with relevant creators for authentic partnerships and campaigns.",
+      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
     images: [
       {
         url: "/og-image.jpg",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Connecting brands with relevant creators for authentic partnerships and campaigns.",
+      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -83,13 +83,28 @@ export default function RootLayout({
     "@type": "Organization",
     "@id": "https://korvio.in/#organization",
     name: "Korvio",
-    url: "https://korvio.in",
+    legalName: "Korvio",
+    url: "https://korvio.in/",
     logo: "https://korvio.in/brand/logo.png",
+    description:
+      "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
     email: "hello.korvio@gmail.com",
+    telephone: "+91-7975923914",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "IN",
+    },
     sameAs: [
-      "https://www.instagram.com/korvio.in/",
+      "https://www.instagram.com/korvio.in",
       "https://www.linkedin.com/in/korvio-in-6b9890428/",
       "https://x.com/KorvioIn",
+    ],
+    knowsAbout: [
+      "Influencer Marketing",
+      "Creator Partnerships",
+      "Brand Collaborations",
+      "Influencer Campaigns",
+      "Creator Marketing",
     ],
   };
 
@@ -97,7 +112,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": "https://korvio.in/#website",
-    name: "Korvio",
+    name: "Korvio — Influencer Marketing Agency",
     url: "https://korvio.in/",
     publisher: {
       "@id": "https://korvio.in/#organization",

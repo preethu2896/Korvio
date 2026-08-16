@@ -62,8 +62,17 @@ export function Credibility() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 space-y-6"
           >
-            <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-[#5B3FD0]">
-              FOR BRANDS
+            <div className="flex items-center justify-between">
+              <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-[#5B3FD0]">
+                FOR BRANDS
+              </div>
+              <Link
+                href="/brands/"
+                className="text-xs font-bold text-[#5B3FD0] hover:text-[#4329b3] transition-colors group inline-flex items-center gap-1"
+              >
+                <span>For Brands</span>
+                <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">→</span>
+              </Link>
             </div>
 
             <h2 className="text-4xl sm:text-6xl lg:text-[clamp(4.25rem,5.5vw,5.5rem)] font-extrabold text-[#111111] tracking-tight leading-[1.05]">
@@ -76,7 +85,7 @@ export function Credibility() {
             <div className="space-y-4 text-[#555555] text-base sm:text-lg font-normal leading-relaxed max-w-[540px]">
               <p>
                 Tell us what you&apos;re trying to achieve. We&apos;ll help you find
-                creators whose content, audience and creative style make sense
+                creators across India whose content, audience and creative style make sense
                 for the campaign.
               </p>
               <p>
@@ -88,7 +97,7 @@ export function Credibility() {
             {/* CTA */}
             <div className="space-y-3 pt-2">
               <Link
-                href="/contact"
+                href="/contact/"
                 onClick={() => trackEvent("work_with_korvio_clicked")}
                 className="inline-flex items-center gap-2.5 text-sm sm:text-base font-bold px-7 py-3.5 rounded-full bg-[#111111] text-[#F7F6F2] hover:bg-[#222222] transition-colors group"
               >
@@ -112,7 +121,7 @@ export function Credibility() {
             <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-[#111111]/12 max-w-[480px] mx-auto lg:max-w-none shadow-xl">
               <Image
                 src="/brand.jpg"
-                alt="Brand team reviewing creator campaign directions"
+                alt="Korvio brand team reviewing creator campaign directions for influencer marketing"
                 width={1122}
                 height={1402}
                 className="w-full h-auto object-cover object-center rounded-2xl sm:rounded-3xl"

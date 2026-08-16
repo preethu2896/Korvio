@@ -28,8 +28,8 @@ export const siteConfig = {
   url: "https://korvio.in",
   tagline: "Creators × Brands. Built to Connect.",
   description:
-    "Korvio connects brands with creators to build meaningful influencer marketing campaigns and creator partnerships.",
-  shortDescription: "Connecting brands with creators that matter.",
+    "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+  shortDescription: "Influencer marketing agency connecting brands with creators across India.",
 
   contact: {
     email: "hello.korvio@gmail.com",
@@ -37,7 +37,7 @@ export const siteConfig = {
     phoneFormatted: "+91 7975923914",
     whatsappNumber: "917975923914",
     whatsappMessage: "Hi Korvio, I'd like to talk about a collaboration.",
-    instagram: "https://www.instagram.com/korvio.in/",
+    instagram: "https://www.instagram.com/korvio.in",
     instagramHandle: "@korvio.in",
     linkedin: "https://www.linkedin.com/in/korvio-in-6b9890428/",
     linkedinHandle: "Korvio In",

@@ -94,7 +94,7 @@ export function CreatorHero() {
               >
                 <Image
                   src="/creator.jpg"
-                  alt="Korvio creator creating authentic content"
+                  alt="Korvio creator network member creating authentic content"
                   fill
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   className="object-cover object-center"

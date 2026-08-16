@@ -40,7 +40,7 @@ export function AboutHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-300 max-w-3xl leading-relaxed font-medium"
           >
-            Korvio was born out of a simple observation: creator marketing is broken by transactional spam, unverified metrics, and chaotic outreach. We are building the connection layer that puts relationship quality first.
+            Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India. We are building the connection layer that puts relationship quality, creative freedom, and genuine audience alignment first.
           </motion.p>
         </div>
 

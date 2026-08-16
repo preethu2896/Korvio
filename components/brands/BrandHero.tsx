@@ -93,7 +93,7 @@ export function BrandHero() {
               >
                 <Image
                   src="/brand.jpg"
-                  alt="Brand team reviewing creator campaign directions"
+                  alt="Korvio brand team reviewing creator-brand partnership strategy"
                   fill
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   className="object-cover object-center"

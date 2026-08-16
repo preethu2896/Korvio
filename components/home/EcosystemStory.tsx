@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
@@ -52,8 +53,17 @@ export function EcosystemStory() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 space-y-6"
           >
-            <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-purple-400">
-              FOR CREATORS
+            <div className="flex items-center justify-between">
+              <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-purple-400">
+                FOR CREATORS
+              </div>
+              <Link
+                href="/creators/"
+                className="text-xs font-bold text-purple-400 hover:text-purple-300 transition-colors group inline-flex items-center gap-1"
+              >
+                <span>For Creators</span>
+                <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">→</span>
+              </Link>
             </div>
 
             <h2 className="text-4xl sm:text-6xl lg:text-[clamp(4.25rem,5.5vw,5.5rem)] font-extrabold text-[#F7F6F2] tracking-tight leading-[1.05]">
@@ -65,7 +75,7 @@ export function EcosystemStory() {
 
             <div className="space-y-4 text-[#F7F6F2]/68 text-base sm:text-lg font-normal leading-relaxed max-w-[540px]">
               <p>
-                Join Korvio&apos;s growing creator network and put your content in
+                Join Korvio&apos;s growing creator network across India and put your content in
                 front of opportunities that align with your voice, audience and
                 creative style.
               </p>
@@ -100,7 +110,7 @@ export function EcosystemStory() {
             <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-[#F7F6F2]/10 max-w-[480px] mx-auto lg:max-w-none shadow-2xl">
               <Image
                 src="/creator.jpg"
-                alt="Korvio creator creating authentic content"
+                alt="Korvio creator network member executing an influencer marketing campaign"
                 width={1122}
                 height={1402}
                 className="w-full h-auto object-cover object-center rounded-2xl sm:rounded-3xl"

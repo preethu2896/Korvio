@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "motion/react";
 
 export function AudienceSplit() {
@@ -67,6 +68,16 @@ export function AudienceSplit() {
             <p className="text-sm sm:text-base text-[#F7F6F2]/68 font-normal leading-relaxed max-w-[420px]">
               Tell us what you&apos;re trying to achieve. We help shape the creator direction around your campaign.
             </p>
+
+            <div>
+              <Link
+                href="/brands/"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-purple-400 transition-colors group"
+              >
+                <span>For Brands</span>
+                <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">→</span>
+              </Link>
+            </div>
           </motion.div>
 
           {/* ZONE 2 — KORVIO CENTER CONNECTION POINT (lg:col-span-2) */}
@@ -114,6 +125,16 @@ export function AudienceSplit() {
             <p className="text-sm sm:text-base text-[#F7F6F2]/68 font-normal leading-relaxed max-w-[420px]">
               Bring your voice, your audience and your point of view. We connect creators with opportunities that make sense.
             </p>
+
+            <div>
+              <Link
+                href="/creators/"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-purple-400 hover:text-purple-300 transition-colors group"
+              >
+                <span>For Creators</span>
+                <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">→</span>
+              </Link>
+            </div>
           </motion.div>
 
         </div>
