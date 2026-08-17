@@ -94,9 +94,9 @@ korvio/
 3. Set up environment variables (optional):
    Create a `.env.local` file in the project root if overriding default endpoints:
    ```env
-   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-377NG4TXY
-   NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=dbd23e29-0325-4391-9837-a7da5a4ac004
-   NEXT_PUBLIC_CREATOR_FORM_URL=https://docs.google.com/forms/d/e/1FAIpQLScMYbOmMzRyYB4eijeKgZyNS76wbJTtRROodFy_Qm3iz0e5lg/viewform
+   NEXT_PUBLIC_GA_MEASUREMENT_ID=your_ga_measurement_id
+   NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
+   NEXT_PUBLIC_CREATOR_FORM_URL=your_creator_form_url
    ```
 
 4. Start the development server:
@@ -128,7 +128,6 @@ The project is optimized for deployment on [Vercel](https://vercel.com) or any N
 
 - **Website**: [korvio.in](https://korvio.in)
 - **Email**: [hello.korvio@gmail.com](mailto:hello.korvio@gmail.com)
-- **Phone / WhatsApp**: [+91 7975923914](https://wa.me/917975923914)
 - **Instagram**: [@korvio.in](https://www.instagram.com/korvio.in)
 - **LinkedIn**: [Korvio In](https://www.linkedin.com/in/korvio-in-6b9890428/)
 - **X (Twitter)**: [@KorvioIn](https://x.com/KorvioIn)
