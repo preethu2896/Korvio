@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
 import { Button } from "@/components/ui/Button";
 import { Sparkles, CheckCircle2, ArrowRight } from "lucide-react";
@@ -77,6 +78,20 @@ export function CreatorHero() {
                 <CheckCircle2 className="w-4 h-4 text-blue-400" />
                 <span>Creative Freedom</span>
               </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              className="pt-2 text-left"
+            >
+              <Link
+                href="/korvio/"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-purple-300 transition-colors"
+              >
+                <span>What is Korvio? Read official network overview →</span>
+              </Link>
             </motion.div>
           </div>
 

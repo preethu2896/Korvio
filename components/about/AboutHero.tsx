@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
@@ -76,6 +77,15 @@ export function AboutHero() {
               <div className="text-indigo-300 text-sm font-extrabold">FOR BRANDS</div>
               <p className="text-slate-400 font-normal normal-case text-xs leading-relaxed">Curated creator matchmaking, managed coordination, and campaign brief clarity.</p>
             </div>
+          </div>
+
+          <div className="pt-4 border-t border-white/10 flex items-center justify-between">
+            <Link
+              href="/korvio/"
+              className="inline-flex items-center gap-2 text-xs font-bold text-purple-300 hover:text-white transition-colors"
+            >
+              <span>Learn what Korvio does in detail →</span>
+            </Link>
           </div>
         </motion.div>
 

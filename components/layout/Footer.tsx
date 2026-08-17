@@ -10,6 +10,7 @@ import { trackEvent } from "@/lib/analytics";
 
 const exploreLinks = [
   { label: "Home", href: "/" },
+  { label: "What is Korvio?", href: "/korvio/" },
   { label: "About", href: "/about/" },
   { label: "What We Do", href: "/#what-we-do" },
   { label: "How It Works", href: "/#how-it-works" },

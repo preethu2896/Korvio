@@ -77,6 +77,20 @@ export function BrandHero() {
                 <span>Performance Insights</span>
               </div>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              className="pt-2 text-left"
+            >
+              <Link
+                href="/korvio/"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-indigo-300 transition-colors"
+              >
+                <span>What is Korvio? Read agency overview →</span>
+              </Link>
+            </motion.div>
           </div>
 
           {/* Right Column: Strategic Campaign Editorial Frame */}
