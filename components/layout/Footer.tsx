@@ -53,7 +53,7 @@ export function Footer() {
             </p>
 
             <p className="text-xs sm:text-sm text-[#F7F6F2]/50 font-normal leading-relaxed max-w-[420px]">
-              Influencer marketing agency connecting brands with creators across India through authentic creator partnerships and campaign collaborations built around relevance, creative freedom and genuine audience fit.
+              Karnataka-based influencer marketing agency connecting brands with creators across India through authentic creator partnerships and campaign collaborations built around relevance, creative freedom and genuine audience fit.
             </p>
           </div>
 

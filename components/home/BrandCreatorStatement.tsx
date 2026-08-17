@@ -42,7 +42,7 @@ export function BrandCreatorStatement() {
           >
             {/* PARAGRAPH 1 */}
             <p>
-              Korvio is an influencer marketing agency connecting brands with creators through partnerships built around relevance, creativity and genuine audience connection across India.
+              Korvio is a Karnataka-based influencer marketing agency connecting brands with creators through authentic partnerships built around relevance, creativity and genuine audience connection across India.
             </p>
 
             {/* PARAGRAPH 2 */}

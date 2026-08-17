@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ContactSection } from "@/components/contact/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Contact Korvio — Start a Creator Campaign",
+  title: "Contact Korvio — Karnataka Influencer Marketing Agency",
   description:
-    "Get in touch with Korvio, an influencer marketing agency in India, to launch targeted creator campaigns or join our creator network.",
+    "Get in touch with Korvio, a Karnataka-based influencer marketing agency connecting brands with creators across India for targeted creator campaigns.",
   alternates: {
     canonical: "https://korvio.in/contact/",
   },
@@ -12,23 +12,23 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://korvio.in/contact/",
     siteName: "Korvio — Influencer Marketing Agency",
-    title: "Contact Korvio — Start a Creator Campaign",
+    title: "Contact Korvio — Karnataka Influencer Marketing Agency",
     description:
-      "Get in touch with Korvio, an influencer marketing agency in India, to launch targeted creator campaigns or join our creator network.",
+      "Get in touch with Korvio, a Karnataka-based influencer marketing agency connecting brands with creators across India for targeted creator campaigns.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact Korvio — Start a Creator Campaign",
+        alt: "Contact Korvio — Karnataka Influencer Marketing Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Korvio — Start a Creator Campaign",
+    title: "Contact Korvio — Karnataka Influencer Marketing Agency",
     description:
-      "Get in touch with Korvio, an influencer marketing agency in India, to launch targeted creator campaigns or join our creator network.",
+      "Get in touch with Korvio, a Karnataka-based influencer marketing agency connecting brands with creators across India for targeted creator campaigns.",
     images: ["/og-image.jpg"],
   },
 };

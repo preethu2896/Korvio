@@ -6,9 +6,9 @@ import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
 import { Sparkles, ArrowRight, Building2, Users, Mail, Phone, MessageCircle, MapPin, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "What is Korvio? — Influencer Marketing Agency | Korvio",
+  title: "What is Korvio? — Karnataka Influencer Marketing Agency | Korvio",
   description:
-    "Learn what Korvio does, how Korvio connects brands with creators, and how brands and creators can work with Korvio across India.",
+    "Learn what Korvio does as a Karnataka-based influencer marketing agency connecting brands with creators across India for authentic campaign collaborations.",
   alternates: {
     canonical: "https://korvio.in/korvio/",
   },
@@ -16,23 +16,23 @@ export const metadata: Metadata = {
     type: "article",
     url: "https://korvio.in/korvio/",
     siteName: "Korvio — Influencer Marketing Agency",
-    title: "What is Korvio? — Influencer Marketing Agency | Korvio",
+    title: "What is Korvio? — Karnataka Influencer Marketing Agency | Korvio",
     description:
-      "Learn what Korvio does, how Korvio connects brands with creators, and how brands and creators can work with Korvio across India.",
+      "Learn what Korvio does as a Karnataka-based influencer marketing agency connecting brands with creators across India for authentic campaign collaborations.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "What is Korvio? — Influencer Marketing Agency",
+        alt: "What is Korvio? — Karnataka Influencer Marketing Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "What is Korvio? — Influencer Marketing Agency | Korvio",
+    title: "What is Korvio? — Karnataka Influencer Marketing Agency | Korvio",
     description:
-      "Learn what Korvio does, how Korvio connects brands with creators, and how brands and creators can work with Korvio across India.",
+      "Learn what Korvio does as a Karnataka-based influencer marketing agency connecting brands with creators across India for authentic campaign collaborations.",
     images: ["/og-image.jpg"],
   },
 };
@@ -43,9 +43,9 @@ export default function KorvioKnowledgePage() {
     "@type": "WebPage",
     "@id": "https://korvio.in/korvio/#webpage",
     url: "https://korvio.in/korvio/",
-    name: "What is Korvio? — Influencer Marketing Agency",
+    name: "What is Korvio? — Karnataka Influencer Marketing Agency",
     description:
-      "Official entity overview explaining what Korvio does, how Korvio connects brands with creators, and how brands and creators work with Korvio across India.",
+      "Official entity overview explaining how Korvio, a Karnataka-based influencer marketing agency, connects brands with creators across India.",
     isPartOf: {
       "@id": "https://korvio.in/#website",
     },
@@ -77,7 +77,7 @@ export default function KorvioKnowledgePage() {
   const commonQuestions = [
     {
       q: "What is Korvio?",
-      a: "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India. Korvio serves as the connection layer between brands seeking targeted audience reach and creators seeking structured brand opportunities.",
+      a: "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations. Korvio serves as the connection layer between brands seeking targeted audience reach and creators seeking structured brand opportunities.",
     },
     {
       q: "What does Korvio do?",
@@ -101,7 +101,11 @@ export default function KorvioKnowledgePage() {
     },
     {
       q: "Where does Korvio operate?",
-      a: "Korvio operates across India, working with brands and digital creators across various regions, content niches, and audience demographics.",
+      a: "Korvio operates from Karnataka and works with brands and creators across India. The agency connects brands with relevant creators nationwide for influencer marketing campaigns, creator partnerships, and authentic brand collaborations.",
+    },
+    {
+      q: "Which Korvio is this?",
+      a: "Korvio is an influencer marketing agency focused on connecting brands with relevant creators across India. It should not be confused with unrelated businesses or digital products that use the Korvio name.",
     },
     {
       q: "How can I contact Korvio?",
@@ -144,7 +148,7 @@ export default function KorvioKnowledgePage() {
           {/* Opening Direct Answer (40-70 words) */}
           <div className="p-6 sm:p-8 rounded-2xl bg-[#121318] border border-purple-500/20 shadow-xl space-y-3">
             <p className="text-lg sm:text-xl font-medium text-slate-100 leading-relaxed">
-              Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India. By focusing on genuine audience alignment, transparent communication, and managed execution, Korvio helps brands launch targeted creator campaigns while helping digital creators access structured brand collaborations.
+              Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations. Korvio helps brands discover suitable creators, coordinate influencer campaigns, and build meaningful creator partnerships while giving creators access to brand collaboration opportunities.
             </p>
           </div>
 
@@ -308,7 +312,18 @@ export default function KorvioKnowledgePage() {
               Where does Korvio operate?
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-              Korvio operates across India, connecting Indian brands and digital creators across regional markets, platforms, and content categories.
+              Korvio operates from Karnataka and works with brands and creators across India. The agency connects brands with relevant creators nationwide for influencer marketing campaigns, creator partnerships, and authentic brand collaborations.
+            </p>
+          </section>
+
+          {/* SECTION 7: WHICH KORVIO IS THIS? */}
+          <section className="space-y-4 border-b border-white/10 pb-12">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
+              <span className="w-2 h-6 bg-purple-500 rounded-full inline-block" />
+              Which Korvio is this?
+            </h2>
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
+              Korvio is an influencer marketing agency focused on connecting brands with relevant creators across India. It should not be confused with unrelated businesses or digital products that use the Korvio name.
             </p>
           </section>
 

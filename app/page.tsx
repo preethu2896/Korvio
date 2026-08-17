@@ -10,9 +10,9 @@ import { Credibility } from "@/components/home/Credibility";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+  title: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
   description:
-    "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+    "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
   alternates: {
     canonical: "https://korvio.in/",
   },
@@ -20,23 +20,23 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://korvio.in/",
     siteName: "Korvio — Influencer Marketing Agency",
-    title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    title: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+      "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+        alt: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    title: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+      "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     images: ["/og-image.jpg"],
   },
 };

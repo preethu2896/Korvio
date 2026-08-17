@@ -29,11 +29,11 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://korvio.in"),
   title: {
-    default: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    default: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
     template: "%s",
   },
   description:
-    "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+    "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
   applicationName: "Korvio",
   authors: [{ name: "Korvio" }],
   robots: {
@@ -48,23 +48,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://korvio.in/",
     siteName: "Korvio — Influencer Marketing Agency",
-    title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    title: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+      "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+        alt: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Korvio — Influencer Marketing Agency Connecting Brands & Creators",
+    title: "Korvio — Karnataka Influencer Marketing Agency Connecting Brands & Creators",
     description:
-      "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
+      "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -86,12 +86,17 @@ export default function RootLayout({
     url: "https://korvio.in/",
     logo: "https://korvio.in/brand/logo.png",
     description:
-      "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
+      "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     email: "hello.korvio@gmail.com",
     telephone: "+91-7975923914",
     address: {
       "@type": "PostalAddress",
+      addressRegion: "Karnataka",
       addressCountry: "IN",
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "India",
     },
     sameAs: [
       "https://www.instagram.com/korvio.in",
@@ -111,7 +116,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": "https://korvio.in/#website",
-    name: "Korvio — Influencer Marketing Agency",
+    name: "Korvio — Karnataka Influencer Marketing Agency",
     url: "https://korvio.in/",
     publisher: {
       "@id": "https://korvio.in/#organization",

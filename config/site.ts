@@ -28,8 +28,8 @@ export const siteConfig = {
   url: "https://korvio.in",
   tagline: "Creators × Brands. Built to Connect.",
   description:
-    "Korvio connects brands with relevant creators for authentic influencer marketing, creator partnerships and campaign collaborations across India.",
-  shortDescription: "Influencer marketing agency connecting brands with creators across India.",
+    "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
+  shortDescription: "Karnataka-based influencer marketing agency connecting brands with creators across India.",
 
   contact: {
     email: "hello.korvio@gmail.com",
@@ -43,7 +43,7 @@ export const siteConfig = {
     linkedinHandle: "Korvio In",
     x: "https://x.com/KorvioIn",
     xHandle: "@KorvioIn",
-    location: "India",
+    location: "Karnataka, India",
   },
 
   /**

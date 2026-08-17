@@ -7,9 +7,9 @@ import { CreatorFAQ } from "@/components/creators/CreatorFAQ";
 import { CreatorCTA } from "@/components/creators/CreatorCTA";
 
 export const metadata: Metadata = {
-  title: "Korvio for Creators — Join Our Creator Network",
+  title: "Korvio for Creators — Join Our Creator Network | Karnataka, India",
   description:
-    "Join Korvio's creator network across India to connect with top brands, access authentic creator partnerships, and monetize your content with meaningful influencer campaigns.",
+    "Join Korvio, a Karnataka-based influencer marketing agency, to connect with top brands across India, access authentic creator partnerships, and monetize your content with meaningful influencer campaigns.",
   alternates: {
     canonical: "https://korvio.in/creators/",
   },
@@ -17,23 +17,23 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://korvio.in/creators/",
     siteName: "Korvio — Influencer Marketing Agency",
-    title: "Korvio for Creators — Join Our Creator Network",
+    title: "Korvio for Creators — Join Our Creator Network | Karnataka, India",
     description:
-      "Join Korvio's creator network across India to connect with top brands, access authentic creator partnerships, and monetize your content with meaningful influencer campaigns.",
+      "Join Korvio, a Karnataka-based influencer marketing agency, to connect with top brands across India, access authentic creator partnerships, and monetize your content with meaningful influencer campaigns.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Korvio for Creators — Join Our Creator Network",
+        alt: "Korvio for Creators — Join Our Creator Network | Karnataka, India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Korvio for Creators — Join Our Creator Network",
+    title: "Korvio for Creators — Join Our Creator Network | Karnataka, India",
     description:
-      "Join Korvio's creator network across India to connect with top brands, access authentic creator partnerships, and monetize your content with meaningful influencer campaigns.",
+      "Join Korvio, a Karnataka-based influencer marketing agency, to connect with top brands across India, access authentic creator partnerships, and monetize your content with meaningful influencer campaigns.",
     images: ["/og-image.jpg"],
   },
 };

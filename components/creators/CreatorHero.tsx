@@ -43,7 +43,7 @@ export function CreatorHero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium"
             >
-              Join Korvio to get matched with authentic brands that fit your audience, content niche, and creative values. 100% free for creators.
+              Join Korvio, a Karnataka-based influencer marketing agency, to get matched with authentic brands across India that fit your audience, content niche, and creative values. 100% free for creators.
             </motion.p>
 
             {/* CTAs */}

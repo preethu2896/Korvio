@@ -89,8 +89,7 @@ export function Credibility() {
                 for the campaign.
               </p>
               <p>
-                From discovery and outreach to coordination and execution,
-                Korvio keeps the collaboration focused from start to finish.
+                As a Karnataka-based influencer marketing agency, Korvio keeps the collaboration focused from discovery and outreach to coordination and execution.
               </p>
             </div>
 

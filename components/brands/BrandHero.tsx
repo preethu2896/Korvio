@@ -24,7 +24,7 @@ export function BrandHero() {
               className="korvio-badge korvio-badge-dark text-indigo-300 border-indigo-500/30"
             >
               <Building2 className="w-3.5 h-3.5 text-indigo-400" />
-              <span>Influencer Marketing Strategy for Brands</span>
+              <span>Karnataka-Based Influencer Marketing Agency</span>
             </motion.div>
 
             <motion.h1
@@ -43,7 +43,7 @@ export function BrandHero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium"
             >
-              Stop burning campaign budgets on unvetted influencer outreach. Korvio matches your brand with creators based on verified audience demographics, niche alignment, and commercial strategy.
+              Stop burning campaign budgets on unvetted influencer outreach. Korvio is a Karnataka-based influencer marketing agency connecting brands with creators across India based on verified audience demographics, niche alignment, and commercial strategy.
             </motion.p>
 
             <motion.div

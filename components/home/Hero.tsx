@@ -39,7 +39,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-purple-300 mb-3 sm:mb-4 text-left ml-0"
           >
-            INFLUENCER MARKETING AGENCY • INDIA
+            INFLUENCER MARKETING AGENCY • KARNATAKA, INDIA
           </motion.div>
 
           {/* MAIN HEADLINE (MODERATELY LARGER SIZING, DESKTOP NO-WRAP LINE 1) */}
@@ -70,7 +70,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-base sm:text-lg lg:text-[18px] text-slate-200 font-normal leading-relaxed max-w-[480px] mb-7 sm:mb-8 text-left ml-0"
           >
-            Connecting brands with relevant creators for authentic influencer marketing and creator partnerships across India.
+            Karnataka-based influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.
           </motion.p>
 
           {/* CTAs - FULLY LEFT ALIGNED */}

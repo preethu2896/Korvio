@@ -75,8 +75,8 @@ export function EcosystemStory() {
 
             <div className="space-y-4 text-[#F7F6F2]/68 text-base sm:text-lg font-normal leading-relaxed max-w-[540px]">
               <p>
-                Join Korvio&apos;s growing creator network across India and put your content in
-                front of opportunities that align with your voice, audience and
+                Join Korvio&apos;s creator network across India. Operating from Karnataka, Korvio puts your content in
+                front of brand opportunities that align with your voice, audience and
                 creative style.
               </p>
               <p>

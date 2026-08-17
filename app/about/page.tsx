@@ -4,9 +4,9 @@ import { WhyKorvio } from "@/components/home/WhyKorvio";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "About Korvio — Creator & Brand Partnerships",
+  title: "About Korvio — Karnataka Influencer Marketing Agency",
   description:
-    "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
+    "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
   alternates: {
     canonical: "https://korvio.in/about/",
   },
@@ -14,23 +14,23 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://korvio.in/about/",
     siteName: "Korvio — Influencer Marketing Agency",
-    title: "About Korvio — Creator & Brand Partnerships",
+    title: "About Korvio — Karnataka Influencer Marketing Agency",
     description:
-      "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
+      "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "About Korvio — Creator & Brand Partnerships",
+        alt: "About Korvio — Karnataka Influencer Marketing Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Korvio — Creator & Brand Partnerships",
+    title: "About Korvio — Karnataka Influencer Marketing Agency",
     description:
-      "Korvio is an influencer marketing agency connecting brands with relevant creators for authentic partnerships and campaign collaborations across India.",
+      "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     images: ["/og-image.jpg"],
   },
 };
