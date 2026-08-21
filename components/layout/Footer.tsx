@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { siteConfig, socialLinks, mailtoUrl, phoneUrl, whatsappUrl } from "@/config/site";
+import { siteConfig, socialLinks, mailtoUrl } from "@/config/site";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
 import { trackEvent } from "@/lib/analytics";
 
@@ -128,22 +128,6 @@ export function Footer() {
                 className="block font-medium text-[#F7F6F2]/75 hover:text-[#F7F6F2] transition-colors"
               >
                 {siteConfig.contact.email}
-              </a>
-              <a
-                href={phoneUrl}
-                className="block font-medium text-[#F7F6F2]/75 hover:text-[#F7F6F2] transition-colors"
-              >
-                {siteConfig.contact.phoneFormatted}
-              </a>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackEvent("whatsapp_clicked")}
-                className="inline-flex items-center gap-1 font-medium text-[#F7F6F2]/75 hover:text-purple-400 transition-colors"
-              >
-                <span>WhatsApp</span>
-                <ArrowUpRight className="w-3 h-3" />
               </a>
             </div>
 

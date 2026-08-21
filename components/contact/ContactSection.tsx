@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { siteConfig, mailtoUrl, whatsappUrl, socialLinks } from "@/config/site";
+import { siteConfig, mailtoUrl, socialLinks } from "@/config/site";
 import { Button } from "@/components/ui/Button";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
-import { ArrowUpRight, CheckCircle2, Mail, MessageCircle, AlertCircle, Loader2 } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Mail, AlertCircle, Loader2 } from "lucide-react";
 import { motion } from "motion/react";
 import { trackEvent } from "@/lib/analytics";
 
@@ -181,18 +181,6 @@ export function ContactSection() {
                   <Mail className="w-4 h-4 text-purple-400 shrink-0" />
                   <span className="font-medium">{siteConfig.contact.email}</span>
                 </a>
-
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackEvent("whatsapp_clicked")}
-                  className="flex items-center gap-3 text-[#F7F6F2]/80 hover:text-purple-400 transition-colors group"
-                >
-                  <MessageCircle className="w-4 h-4 text-purple-400 shrink-0" />
-                  <span className="font-medium">{siteConfig.contact.phoneFormatted}</span>
-                  <ArrowUpRight className="w-3 h-3 text-[#F7F6F2]/40 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </a>
               </div>
 
               {/* Social Channels */}
@@ -366,7 +354,7 @@ export function ContactSection() {
                     </div>
                   </div>
 
-                  {/* BRAND / COMPANY & PHONE / WHATSAPP */}
+                  {/* BRAND / COMPANY & PHONE */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <label htmlFor="brand" className="block text-xs font-semibold uppercase tracking-[0.15em] text-[#F7F6F2]/70">
@@ -392,7 +380,7 @@ export function ContactSection() {
 
                     <div className="space-y-2">
                       <label htmlFor="phone" className="block text-xs font-semibold uppercase tracking-[0.15em] text-[#F7F6F2]/70">
-                        PHONE / WHATSAPP
+                        PHONE (OPTIONAL)
                       </label>
                       <input
                         id="phone"

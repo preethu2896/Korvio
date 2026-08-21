@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { InstagramIcon, LinkedinIcon, XIcon } from "@/components/ui/Icons";
 
 /**
@@ -33,10 +33,6 @@ export const siteConfig = {
 
   contact: {
     email: "hello.korvio@gmail.com",
-    phone: "7975923914",
-    phoneFormatted: "+91 7975923914",
-    whatsappNumber: "917975923914",
-    whatsappMessage: "Hi Korvio, I'd like to talk about a collaboration.",
     instagram: "https://www.instagram.com/korvio.in",
     instagramHandle: "@korvio.in",
     linkedin: "https://www.linkedin.com/in/korvio-in-6b9890428/",
@@ -63,10 +59,6 @@ export const siteConfig = {
   formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "https://api.web3forms.com/submit",
 } as const;
 
-export const whatsappUrl = `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(
-  siteConfig.contact.whatsappMessage,
-)}`;
-
 export const mailtoUrl = `mailto:${siteConfig.contact.email}`;
 
 export const navItems: readonly NavItem[] = [
@@ -84,26 +76,12 @@ export const audienceCtas = {
   creator: { label: "I'm a Creator", href: "#creators" },
 } as const;
 
-export const phoneUrl = `tel:+91${siteConfig.contact.phone}`;
-
 export const socialLinks: readonly SocialLink[] = [
   {
     label: "Email",
     href: mailtoUrl,
     icon: Mail,
     handle: siteConfig.contact.email,
-  },
-  {
-    label: "WhatsApp",
-    href: whatsappUrl,
-    icon: MessageCircle,
-    handle: "WhatsApp",
-  },
-  {
-    label: "Phone",
-    href: phoneUrl,
-    icon: Phone,
-    handle: siteConfig.contact.phoneFormatted,
   },
   {
     label: "Instagram",

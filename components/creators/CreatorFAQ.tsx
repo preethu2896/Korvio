@@ -31,7 +31,7 @@ export function CreatorFAQ() {
     },
     {
       q: "How will Korvio contact me?",
-      a: "After you submit the application form, our creator partnerships team will review your profile and contact you via email or WhatsApp when matching campaign opportunities arise.",
+      a: "After you submit the application form, our creator partnerships team will review your profile and contact you via email when matching campaign opportunities arise.",
     },
     {
       q: "What types of brands can I work with?",

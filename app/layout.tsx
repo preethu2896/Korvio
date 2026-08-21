@@ -88,7 +88,6 @@ export default function RootLayout({
     description:
       "Korvio is a Karnataka-based influencer marketing agency connecting brands with relevant creators across India for authentic partnerships and campaign collaborations.",
     email: "hello.korvio@gmail.com",
-    telephone: "+91-7975923914",
     address: {
       "@type": "PostalAddress",
       addressRegion: "Karnataka",

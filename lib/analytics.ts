@@ -6,7 +6,6 @@ export type GAEventName =
   | "creator_form_clicked"
   | "brand_inquiry_submitted"
   | "email_clicked"
-  | "whatsapp_clicked"
   | "instagram_clicked"
   | "linkedin_clicked"
   | "x_clicked";

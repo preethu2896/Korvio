@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { siteConfig, mailtoUrl, phoneUrl, whatsappUrl } from "@/config/site";
+import { siteConfig, mailtoUrl } from "@/config/site";
 import { services, processSteps } from "@/config/content";
 import { CreatorApplyButton } from "@/components/ui/CreatorApplyButton";
-import { Sparkles, ArrowRight, Building2, Users, Mail, Phone, MessageCircle, MapPin, HelpCircle } from "lucide-react";
+import { Sparkles, ArrowRight, Building2, Users, Mail, MapPin, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "What is Korvio? — Karnataka Influencer Marketing Agency | Korvio",
@@ -109,7 +109,7 @@ export default function KorvioKnowledgePage() {
     },
     {
       q: "How can I contact Korvio?",
-      a: "You can contact Korvio via email at hello.korvio@gmail.com, by phone or WhatsApp at +91 7975923914, or through the contact form on korvio.in/contact/.",
+      a: "You can contact Korvio via email at hello.korvio@gmail.com or through the contact form on korvio.in/contact/.",
     },
   ];
 
@@ -356,7 +356,7 @@ export default function KorvioKnowledgePage() {
               You can contact Korvio through the official channels listed below:
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
                 href={mailtoUrl}
                 className="p-4 rounded-xl bg-[#121318] border border-white/10 flex flex-col gap-2 hover:border-purple-500/40 transition-colors"
@@ -368,29 +368,16 @@ export default function KorvioKnowledgePage() {
                 <span className="text-sm font-semibold text-white">{siteConfig.contact.email}</span>
               </a>
 
-              <a
-                href={phoneUrl}
+              <Link
+                href="/contact/"
                 className="p-4 rounded-xl bg-[#121318] border border-white/10 flex flex-col gap-2 hover:border-purple-500/40 transition-colors"
               >
                 <div className="flex items-center gap-2 text-purple-400 text-xs font-bold">
-                  <Phone className="w-4 h-4" />
-                  <span>Phone</span>
+                  <HelpCircle className="w-4 h-4" />
+                  <span>Contact Form</span>
                 </div>
-                <span className="text-sm font-semibold text-white">{siteConfig.contact.phoneFormatted}</span>
-              </a>
-
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 rounded-xl bg-[#121318] border border-white/10 flex flex-col gap-2 hover:border-purple-500/40 transition-colors"
-              >
-                <div className="flex items-center gap-2 text-purple-400 text-xs font-bold">
-                  <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp</span>
-                </div>
-                <span className="text-sm font-semibold text-white">+91 7975923914</span>
-              </a>
+                <span className="text-sm font-semibold text-white">korvio.in/contact/</span>
+              </Link>
             </div>
 
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-medium text-slate-400">
